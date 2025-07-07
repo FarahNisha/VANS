@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Garamond', sans-serif;
+  background-color: #dedada;
+  color: #ededed;
+}
+
 * {
   font-family: 'Garamond', serif;
 }

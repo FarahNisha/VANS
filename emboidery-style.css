@@ -1,3 +1,14 @@
+body {
+  margin: 0;
+  font-family: 'Garamond', sans-serif;
+  background-color: #dedada;
+  color: #ededed;
+}
+
+* {
+  font-family: 'Garamond', serif;
+}
+
 /* General page styling */
 body {
   margin: 0;

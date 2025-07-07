@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>About Us | Vans Malaysia</title>
+  <link rel="stylesheet" href="Aboutstyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+
+<body>
+  <section class="hero">
+    <h1>About Us</h1>
+    <div class="logo"><img src="logovans.png" alt="logo"></div>
+  </section>
+
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="Home.html">HOME</a></li>
+        <li class="dropdown">
+          <a href="aboutus.html" class="dropbtn">ABOUT US</a>
+          <div class="dropdown-content">
+           
+          </div>
+        </li>
+        <li><a href="Campaign.html">CAMPAIGN</a></li>
+    
+        <li class="dropdown">
+          <a href="getinvolved.html" class="dropbtn">GET INVOLVED</a>
+          <ul class="dropdown-content">
+            <li><a href="Join an Event.html">Join An Event</a></li>
+            <li><a href="Volunteer.html">Volunteer</a></li>
+            <li><a href="Donate.html">Donation</a></li>
+          </ul>
+        </li>
+        <li><a href="Contactus.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="About Us" class="about-section">
+    <div class="about-image">
+      <img src="shoes.jpg" alt="Vans Floral Shoes">
+    </div>
+    <div class="about-box">
+      <a href="member.html" class="member-btn">
+        Meet Our Members <i class="fas fa-arrow-right"></i>
+      </a>
+      <h2>Get To Know Us</h2>
+      <p>Hello, we are third-year students of the Bachelor of Information Science (Hons.) Library Management from Universiti Teknologi MARA (UiTM), Negeri Sembilan, Rembau Campus (CDIM244). This project is part of our coursework for IMS456 – Advanced Web Design & Content Management, under the Faculty of Information Science, Group N5CDIM244EKA.</p>
+    </div>
+  </section>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll(".modal");
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2025 qazarinanadirah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

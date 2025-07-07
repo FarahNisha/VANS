@@ -1,0 +1,103 @@
+/* General page styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: #ededed;
+}
+
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+nav .logo img {
+  height: 100px;
+}
+
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+
+nav .nav-links a:hover {
+  color: #ffa07a;
+}
+
+
+/* Header Section */
+.header-purpose {
+  background-color: #cebfbf;
+  color: rgb(7, 7, 7);
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.header-purpose h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+
+/* Purpose Content Section */
+.purpose-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+
+.purpose-image {
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+
+/* Text Content */
+.text-section {
+  max-width: 600px;
+}
+
+
+.text-section h2 {
+  color: #ffa07a;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+
+.text-section p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #ededed;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #d2bebe;
+  font-size: 0.9rem;
+  color: #080808;
+  margin-top: 2rem;
+}

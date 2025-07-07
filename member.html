@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Vans Malaysia</title>
+  <link rel="stylesheet" href="memberstyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+
+<body>
+  <section class="hero">
+    <h1>Our Members</h1>
+    <div class="logo"><img src="logovans.png" alt="Vans Logo"></div>
+  </section>
+
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+           <a href="aboutus.html" class="dropbtn">About Us</a>
+          
+        </li>
+        <li><a href="Campaign.html">Campaign</a></li>
+        <li><a href="getinvolved.html">Get Involved</a></li>
+        <li><a href="Contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="member" class="member-grid">
+  <div class="polaroid" onclick="openModal('modal1')">
+    <div class="polaroid-frame">
+      <img src="hanisha.jpg" alt="Hanisha">
+      <div class="caption">Ms. Hanisha</div>
+    </div>
+  </div>
+
+  <div class="polaroid" onclick="openModal('modal2')">
+    <div class="polaroid-frame">
+      <img src="razleen.jpg" alt="Razleen">
+      <div class="caption">Ms. Razleen</div>
+    </div>
+  </div>
+
+  <div class="polaroid" onclick="openModal('modal3')">
+    <div class="polaroid-frame">
+      <img src="amanda.jpg" alt="Amanda">
+      <div class="caption">Ms. Sarah</div>
+    </div>
+  </div>
+
+  <div class="polaroid" onclick="openModal('modal4')">
+    <div class="polaroid-frame">
+      <img src="nad.jpg" alt="Nad">
+      <div class="caption">Ms. Qazarina</div>
+    </div>
+  </div>
+
+  <div class="polaroid" onclick="openModal('modal5')">
+    <div class="polaroid-frame">
+      <img src="ainaerize.jpg" alt="Aina">
+      <div class="caption">Ms. Aina</div>
+    </div>
+  </div>
+</section>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <p><strong>Name:</strong> Nur Farah Hanisha binti Sazlan</p>
+      <p><strong>Student ID:</strong> 2022605328</p>
+      <p><i class="fas fa-envelope"></i> nurfarahhanisha@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/frhnshaa_" target="_blank">frhnshaa_</a></p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <p><strong>Name:</strong> Nur Razleen binti Mohamed Razlan</p>
+      <p><strong>Student ID:</strong> 2022868472</p>
+      <p><i class="fas fa-envelope"></i> razleenrazlan@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/razleenrazlan" target="_blank">razleenrazlan</a></p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <p><strong>Name:</strong> Sarah Amanda binti Mazlan</p>
+      <p><strong>Student ID:</strong> 2022868722</p>
+      <p><i class="fas fa-envelope"></i> amandamazlan276@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/erhndzz" target="_blank">erhndzz</a></p>
+    </div>
+  </div>
+
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <p><strong>Name:</strong> Nurul Qazarina Nadirah binti Nurradi</p>
+      <p><strong>Student ID:</strong> 2022882662</p>
+      <p><i class="fas fa-envelope"></i> qazarinanadirah@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/viiixmmii_" target="_blank">viiixmmii_</a></p>
+    </div>
+  </div>
+
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal5')">&times;</span>
+      <p><strong>Name:</strong> Nur Aina Erize binti Zahari Efendi</p>
+      <p><strong>Student ID:</strong> 2022608632</p>
+      <p><i class="fas fa-envelope"></i> ainaerize@gmail.com</p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/ainaerize" target="_blank">ainaerize</a></p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+    window.onclick = function(event) {
+      const modals = document.querySelectorAll(".modal");
+      modals.forEach(modal => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2025 IMS456. All rights reserved</p>
+  </footer>
+
+</body>
+</html>
